@@ -2,6 +2,7 @@
     background-color: rgb(238, 238, 238);
     width: 500px;
     border: solid rgb(205, 205, 205) 1px;
+    border-radius: 3px;
     margin: 1% 33%;
     overflow: auto;
 }
@@ -11,9 +12,11 @@
 }
 
 h2 {
-    color: red;
+    font-family: 'Ubuntu', sans-serif;
+    color: crimson;
 }
 
 p {
     padding: 8px;
+    font-family: 'Ubuntu', sans-serif;
 }

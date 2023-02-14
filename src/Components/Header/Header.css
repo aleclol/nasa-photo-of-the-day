@@ -11,7 +11,8 @@
 }
 
 h1{
-    color: red;
+    font-family: 'Ubuntu', sans-serif;
+    color: crimson;
 }
 
 .headerImg {
