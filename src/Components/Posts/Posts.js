@@ -7,7 +7,7 @@ const {data} = props;
 
     return(
         <div>
-            {data.map((apod) => {
+            {data.slice(0).reverse().map((apod) => {
             return <Container copyright={apod.copyright}
                             date={apod.date} 
                             explanation={apod.explanation}

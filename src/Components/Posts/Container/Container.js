@@ -3,14 +3,15 @@ import "./Container.css"
 
 function Container (props) {
 
-    // const {title, explanation, hdurl} = props
-console.log(props)
+const {url, title, copyright, date, explanation, hdurl} = props
 
 return (
     <div className='Container'>
-        <img className='containerImg'  src={props.hdurl}/>
-        <h2>{props.title}</h2>
-        <p>{props.explanation}</p>
+        <img className='containerImg'  src={url}/>
+        <h2>{title}</h2>
+        <p>By: {copyright}</p>
+        <p>{date}</p>
+        <p>{explanation}</p>
     </div>
 )
 
