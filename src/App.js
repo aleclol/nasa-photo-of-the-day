@@ -9,16 +9,16 @@ function App() {
 
   const [data, setData] = useState(dummyData)
 
-// let startDate = '2023-02-08'
-// let endDate = '2023-02-14'
+let startDate = '2022-02-02'
+let endDate = '2022-02-14'
 
-//   useEffect(()=> {
-//     axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date={startDate}&end_date={endDate}")
-//         .then(res => {
-//           setData(res.data)
-//         })
-//         .catch(err => console.log(err))
-// }, [])
+  useEffect(()=> {
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=${startDate}&end_date=${endDate}`)
+        .then(res => {
+          setData(res.data)
+        })
+        .catch(err => console.log(err))
+}, [])
 
   return (
     <div className="App">
