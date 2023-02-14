@@ -1,8 +1,14 @@
-.header {
-    /* border: solid black 1px; */
-    background-color: red;
+.headerDiv {
+    border-bottom: solid lightgray 1px;
+    display: flex;
+    justify-content:space-around;
 }
 
 h1{
     color: red;
+}
+
+.headerImg {
+    height: 24px;
+    padding: 1.75% 0;
 }
