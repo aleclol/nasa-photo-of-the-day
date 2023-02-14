@@ -12,11 +12,15 @@
 }
 
 h2 {
+    font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     color: crimson;
 }
 
 p {
-    padding: 8px;
+    padding: 1px 15px;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: left;
 }
