@@ -6,8 +6,10 @@ function Header (){
 
 return (
     <div className="headerDiv">
-        <img className="headerImg" src={nasaWorm} />
-        <h1>APOD</h1>
+        <div>
+            <img className="headerImg" src={nasaWorm} />
+            <h1>APOD</h1>
+        </div>
     </div>
 )
 

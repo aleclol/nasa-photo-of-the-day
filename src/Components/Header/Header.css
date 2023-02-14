@@ -1,7 +1,13 @@
 .headerDiv {
+    background-color: white;
     border-bottom: solid lightgray 1px;
+}
+
+.headerDiv div {
+    width: 500px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+    margin: 0% 33%;
 }
 
 h1{
@@ -10,5 +16,5 @@ h1{
 
 .headerImg {
     height: 24px;
-    padding: 1.75% 0;
+    padding: 5.5% 0;
 }
