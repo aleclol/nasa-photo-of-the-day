@@ -1,18 +1,45 @@
 import React from 'react'
-import "./Container.css"
+import styled from 'styled-components'
+
+const ContainerDiv = styled.div`
+    background-color: rgb(238, 238, 238);
+    width: 500px;
+    border: solid rgb(205, 205, 205) 1px;
+    border-radius: 3px;
+    margin: 1% 33%;
+    overflow: auto;
+`
+
+const ContainerImg = styled.img`
+    width: 100%;
+`
+
+const Header2 = styled.h2`
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: crimson;
+`
+
+const Paragraph = styled.p`
+    padding: 1px 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: left;
+`
 
 function Container (props) {
 
 const {url, title, copyright, date, explanation, hdurl} = props
 
 return (
-    <div className='Container'>
-        <img className='containerImg'  src={url}/>
-        <h2>{title}</h2>
-        <p>By: {copyright}</p>
-        <p>{date}</p>
-        <p>{explanation}</p>
-    </div>
+    <ContainerDiv>
+        <ContainerImg className='containerImg'  src={url}/>
+        <Header2>{title}</Header2>
+        <Paragraph>By: {copyright}</Paragraph>
+        <Paragraph>{date}</Paragraph>
+        <Paragraph>{explanation}</Paragraph>
+    </ContainerDiv>
 )
 
 }
