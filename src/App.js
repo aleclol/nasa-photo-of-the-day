@@ -4,13 +4,11 @@ import dummyData from "./dummyData";
 import "./App.css";
 import Header from './Components/Header/Header'
 import Posts from './Components/Posts/Posts'
+import DateRange, {startDate, endDate} from "./Components/DateRange/DateRange";
 
 function App() {
 
   const [data, setData] = useState(dummyData)
-
-let startDate = '2022-02-02'
-let endDate = '2022-02-14'
 
 //   useEffect(()=> {
 //     axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=${startDate}&end_date=${endDate}`)
@@ -23,6 +21,7 @@ let endDate = '2022-02-14'
   return (
     <div className="App">
       <Header />
+      <DateRange />
       <Posts data={data} />
     </div>
     

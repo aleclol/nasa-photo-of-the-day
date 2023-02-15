@@ -18,6 +18,7 @@ const Header2 = styled.h2`
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     color: crimson;
+    text-align: center;
 `
 
 const Paragraph = styled.p`
@@ -30,13 +31,13 @@ const Paragraph = styled.p`
 
 function Container (props) {
 
-const {url, title, copyright, date, explanation, hdurl} = props
+const {url, title, copyright, date, explanation, hdurl, key} = props
 
 return (
     <ContainerDiv>
         <ContainerImg className='containerImg'  src={url}/>
         <Header2>{title}</Header2>
-        <Paragraph>By: {copyright}</Paragraph>
+        {copyright? <Paragraph>By: {copyright}</Paragraph>: null}
         <Paragraph>{date}</Paragraph>
         <Paragraph>{explanation}</Paragraph>
     </ContainerDiv>
